@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "JobGuard",
+  "version": "1.0.0",
+  "description": "A an extension that helps you to find the best job offers and avoid scams.",
+  "icons": {
+    "64": "src/assets/react.svg"
+  },
+  "background": {
+    "service_worker": "src/service-worker.js",
+    "type": "module"
+  },
+  "action" : {
+    "default_popup": "index.html"
+  },    
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
